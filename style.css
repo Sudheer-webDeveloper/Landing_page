@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.body-color{
+ background: #ddd;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.main-container{
+  background-image: linear-gradient(45deg,transparent, #000000dc),url(images/food.jpg); 
+  background-size:100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.logo{
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin: 50px auto 20px;
+}
+
+.main h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: #fff;
+}
+.buttons{
+   display: flex;
+   justify-content: flex-end;
+   margin-left: -50px;
+}
+.btns{
+    margin-top: 14px;
+    margin-right: 8px;
+    padding: 7px 3px;
+    background: transparent;
+    border: none;
+    outline: none;
+   color: #fff;
+
+}
+.btns:nth-child(2){
+    width:180px;
+    height: 45px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    margin-bottom: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.search input{
+    margin-right: 10px;
+    padding: 10px 10px;
+    height: 50px;
+}
+
+.input-1{
+    border: 1px solid black;
+    padding-left: 20px;
+    width: 530px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+
+}
+
+.input-1 input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.card-1{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+}
+.text{
+    color:rgb(34, 49, 92);
+}
+.text-1{
+    color: grey;
+    font-weight: normal;
+}
+
+
+/* here onwards main section starts  */
+
+main{
+    max-width: 90%;
+    margin: 0 auto 50px;
+
+}
+.card-section{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cards{
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.321);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+
+.img img{
+    height:190px;
+    width: 170px;
+    margin-right: 10px;
+}
+.texter{
+    /* margin: 5px; */
+    margin-left: 20px;
+ }
+
+
+ @media only screen and (max-width:700px){
+    .main-container{
+        background-size:160%;
+      }
+
+ }
+ @media only screen and (max-width:510px){
+    .main-container{
+        background-size:300%;
+      }
+
+      .input-1{
+        width: 150px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+
+ }
+
+
+
+ /* this is optional media query */
+ @media only screen and (max-width:295px){
+    .main-container{
+       
+        background-size:400%;
+
+       
+      }
+
+ }
